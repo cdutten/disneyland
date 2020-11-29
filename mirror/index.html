@@ -1,130 +1,655 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>mirrors.eze.sysarmy.com</title>
-    <style type="text/css">
-      /*<![CDATA[*/
-      body{margin:10px;padding:0px;background:#fff;color:#000;font-family:Sans-Serif;}
-      h1{padding:4px;text-align:center;border:4px double #000;background:#ffd;}
-      h2{padding:4px;border:1px solid #888;background:#ffd;}
-      table{border:0;margin-left:auto;margin-right:auto;margin-bottom:10px;}
-      th{background:#bbd;color:white;padding:2px;}
-      td{padding:2px;border-bottom:1px dotted #bbd;}
-      img{border:0;vertical-align: middle;}
-      blockquote{font-weight:bold;font-size:80%;}
-      a:hover {background:#ff0;}
-      a:hover img {background:#fff;}
-      .headtext{color:#889;text-align:center;}
-      #directory{text-align:center;margin-left:auto;margin-right:auto;}
-      #bandwidth{color:#889;text-align:center;font-size:75%;}
-      .bandwidth{color:#889;text-align:center;font-size:75%;}
-      #news{color:#003;}
-      #donors{text-align:center;margin-left:auto;margin-right:auto;}
-      #trademark{font-size:75%;text-align:center;}
-      #versions{text-align:center;}
-      .kver{text-align:center;color:#004;font-size:90%;}
-      .pvkey{color:#400;font-size:66%;}
-      p{margin:10px;}
-      /*]]>*/
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sysarmy Mirror</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap" rel="stylesheet">
+    <style>/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+    /* Document
+       ========================================================================== */
+
+    /**
+     * 1. Correct the line height in all browsers.
+     * 2. Prevent adjustments of font size after orientation changes in iOS.
+     */
+
+    html {
+        line-height: 1.15; /* 1 */
+        -webkit-text-size-adjust: 100%; /* 2 */
+    }
+
+    /* Sections
+       ========================================================================== */
+
+    /**
+     * Remove the margin in all browsers.
+     */
+
+    body {
+        margin: 0;
+    }
+
+    /**
+     * Render the `main` element consistently in IE.
+     */
+
+    main {
+        display: block;
+    }
+
+    /**
+     * Correct the font size and margin on `h1` elements within `section` and
+     * `article` contexts in Chrome, Firefox, and Safari.
+     */
+
+    h1 {
+        font-size: 2em;
+        margin: 0.67em 0;
+    }
+
+    /* Grouping content
+       ========================================================================== */
+
+    /**
+     * 1. Add the correct box sizing in Firefox.
+     * 2. Show the overflow in Edge and IE.
+     */
+
+    hr {
+        box-sizing: content-box; /* 1 */
+        height: 0; /* 1 */
+        overflow: visible; /* 2 */
+    }
+
+    /**
+     * 1. Correct the inheritance and scaling of font size in all browsers.
+     * 2. Correct the odd `em` font sizing in all browsers.
+     */
+
+    pre {
+        font-family: monospace, monospace; /* 1 */
+        font-size: 1em; /* 2 */
+    }
+
+    /* Text-level semantics
+       ========================================================================== */
+
+    /**
+     * Remove the gray background on active links in IE 10.
+     */
+
+    a {
+        background-color: transparent;
+    }
+
+    /**
+     * 1. Remove the bottom border in Chrome 57-
+     * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+     */
+
+    abbr[title] {
+        border-bottom: none; /* 1 */
+        text-decoration: underline; /* 2 */
+        text-decoration: underline dotted; /* 2 */
+    }
+
+    /**
+     * Add the correct font weight in Chrome, Edge, and Safari.
+     */
+
+    b,
+    strong {
+        font-weight: bolder;
+    }
+
+    /**
+     * 1. Correct the inheritance and scaling of font size in all browsers.
+     * 2. Correct the odd `em` font sizing in all browsers.
+     */
+
+    code,
+    kbd,
+    samp {
+        font-family: monospace, monospace; /* 1 */
+        font-size: 1em; /* 2 */
+    }
+
+    /**
+     * Add the correct font size in all browsers.
+     */
+
+    small {
+        font-size: 80%;
+    }
+
+    /**
+     * Prevent `sub` and `sup` elements from affecting the line height in
+     * all browsers.
+     */
+
+    sub,
+    sup {
+        font-size: 75%;
+        line-height: 0;
+        position: relative;
+        vertical-align: baseline;
+    }
+
+    sub {
+        bottom: -0.25em;
+    }
+
+    sup {
+        top: -0.5em;
+    }
+
+    /* Embedded content
+       ========================================================================== */
+
+    /**
+     * Remove the border on images inside links in IE 10.
+     */
+
+    img {
+        border-style: none;
+    }
+
+    /* Forms
+       ========================================================================== */
+
+    /**
+     * 1. Change the font styles in all browsers.
+     * 2. Remove the margin in Firefox and Safari.
+     */
+
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+        font-family: inherit; /* 1 */
+        font-size: 100%; /* 1 */
+        line-height: 1.15; /* 1 */
+        margin: 0; /* 2 */
+    }
+
+    /**
+     * Show the overflow in IE.
+     * 1. Show the overflow in Edge.
+     */
+
+    button,
+    input { /* 1 */
+        overflow: visible;
+    }
+
+    /**
+     * Remove the inheritance of text transform in Edge, Firefox, and IE.
+     * 1. Remove the inheritance of text transform in Firefox.
+     */
+
+    button,
+    select { /* 1 */
+        text-transform: none;
+    }
+
+    /**
+     * Correct the inability to style clickable types in iOS and Safari.
+     */
+
+    button,
+    [type="button"],
+    [type="reset"],
+    [type="submit"] {
+        -webkit-appearance: button;
+    }
+
+    /**
+     * Remove the inner border and padding in Firefox.
+     */
+
+    button::-moz-focus-inner,
+    [type="button"]::-moz-focus-inner,
+    [type="reset"]::-moz-focus-inner,
+    [type="submit"]::-moz-focus-inner {
+        border-style: none;
+        padding: 0;
+    }
+
+    /**
+     * Restore the focus styles unset by the previous rule.
+     */
+
+    button:-moz-focusring,
+    [type="button"]:-moz-focusring,
+    [type="reset"]:-moz-focusring,
+    [type="submit"]:-moz-focusring {
+        outline: 1px dotted ButtonText;
+    }
+
+    /**
+     * Correct the padding in Firefox.
+     */
+
+    fieldset {
+        padding: 0.35em 0.75em 0.625em;
+    }
+
+    /**
+     * 1. Correct the text wrapping in Edge and IE.
+     * 2. Correct the color inheritance from `fieldset` elements in IE.
+     * 3. Remove the padding so developers are not caught out when they zero out
+     *    `fieldset` elements in all browsers.
+     */
+
+    legend {
+        box-sizing: border-box; /* 1 */
+        color: inherit; /* 2 */
+        display: table; /* 1 */
+        max-width: 100%; /* 1 */
+        padding: 0; /* 3 */
+        white-space: normal; /* 1 */
+    }
+
+    /**
+     * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+     */
+
+    progress {
+        vertical-align: baseline;
+    }
+
+    /**
+     * Remove the default vertical scrollbar in IE 10+.
+     */
+
+    textarea {
+        overflow: auto;
+    }
+
+    /**
+     * 1. Add the correct box sizing in IE 10.
+     * 2. Remove the padding in IE 10.
+     */
+
+    [type="checkbox"],
+    [type="radio"] {
+        box-sizing: border-box; /* 1 */
+        padding: 0; /* 2 */
+    }
+
+    /**
+     * Correct the cursor style of increment and decrement buttons in Chrome.
+     */
+
+    [type="number"]::-webkit-inner-spin-button,
+    [type="number"]::-webkit-outer-spin-button {
+        height: auto;
+    }
+
+    /**
+     * 1. Correct the odd appearance in Chrome and Safari.
+     * 2. Correct the outline style in Safari.
+     */
+
+    [type="search"] {
+        -webkit-appearance: textfield; /* 1 */
+        outline-offset: -2px; /* 2 */
+    }
+
+    /**
+     * Remove the inner padding in Chrome and Safari on macOS.
+     */
+
+    [type="search"]::-webkit-search-decoration {
+        -webkit-appearance: none;
+    }
+
+    /**
+     * 1. Correct the inability to style clickable types in iOS and Safari.
+     * 2. Change font properties to `inherit` in Safari.
+     */
+
+    ::-webkit-file-upload-button {
+        -webkit-appearance: button; /* 1 */
+        font: inherit; /* 2 */
+    }
+
+    /* Interactive
+       ========================================================================== */
+
+    /*
+     * Add the correct display in Edge, IE 10+, and Firefox.
+     */
+
+    details {
+        display: block;
+    }
+
+    /*
+     * Add the correct display in all browsers.
+     */
+
+    summary {
+        display: list-item;
+    }
+
+    /* Misc
+       ========================================================================== */
+
+    /**
+     * Add the correct display in IE 10+.
+     */
+
+    template {
+        display: none;
+    }
+
+    /**
+     * Add the correct display in IE 10.
+     */
+
+    [hidden] {
+        display: none;
+    }</style>
+    <style>
+        .container {
+            background: #808080;
+            width: 1440px;
+            height: 1561px;
+            display: flex;
+            justify-content: center;
+        }
+        .term {
+            background: #000000;
+            display: flex;
+            width: 80%;
+            height: 80%;
+            margin-top: 40px;
+            border-radius: 5px;
+            flex-direction: column;
+        }
+        .title-bar {
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .actions-container {
+            display: flex;
+            width: 40px;
+            height: 7px;
+            padding: 10px 15px;
+            justify-content: space-around;
+        }
+        .actions {
+            width: 10px;
+            height: 10px;
+        }
+        .close {
+            background: #FF544D;
+            border: 1px solid #DA3C37;
+            box-sizing: border-box;
+            border-radius: 5px;
+        }
+        .minimize {
+            background: #FFB429;
+            border: 1px solid #F0A318;
+            box-sizing: border-box;
+            border-radius: 5px;
+        }
+        .maximize {
+            background: #25C63A;
+            border: 1px solid #12A025;
+            box-sizing: border-box;
+            border-radius: 5px;
+        }
+        .title {
+            font-family: Open Sans,serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 16px;
+            /* identical to box height */
+
+            text-align: center;
+
+            color: #FFFFFF;
+            flex-grow: 3;
+        }
+        .divider {
+            width: 100%;
+            background: #ffffff;
+            opacity: 27%;
+        }
+        .directory {
+            font-family: "Source Code Pro",monospace;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 13px;
+            line-height: 16px;
+            /* identical to box height */
+
+            display: inline-block;
+
+            color: #56F2E6;
+        }
+        .git {
+            font-family: "Source Code Pro",monospace;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 16px;
+            /* identical to box height */
+
+            display: inline-block;
+
+            color: #2D9CDB;
+        }
+        .branch {
+            font-family: "Source Code Pro",monospace;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 16px;
+            /* identical to box height */
+
+            display: inline-block;
+
+            color: #EB5757;
+        }
+        .command {
+            font-family: "Source Code Pro",monospace;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 16px;
+            /* identical to box height */
+
+            display: inline-block;
+
+            color: #ffffff;
+        }
+        .logo-sysarmy {
+            font-family: 'Roboto Mono', monospace;
+            //font-style: normal;
+            // font-weight: bold;
+            font-size: 3px;
+            // line-height: 4px;
+            display: block;
+
+            color: #FFFFFF;
+        }
     </style>
-    <link rel="icon" href="/favicon.png" type="image/png" />
-  </head>
+</head>
+<body>
+<main class="container">
+    <section class="term">
+        <div class="title-bar">
+            <div class="actions-container">
+                <div class="actions close"></div>
+                <div class="actions minimize"></div>
+                <div class="actions maximize"></div>
+            </div>
+            <div class="title">
+                cdutten@home: ~/workspace/disneyland
+            </div>
+        </div>
+        <hr class="divider">
+        <div class="welcome">
+            <img src="./img/Arrow.png" alt="green arrow">
+            <p class="directory">disneyland</p>
+            <p class="git">git:(</p>
+            <span class="branch">issue25</span>
+            <p class="git">)</p>
+            <p class="command">cat ./mirror/welcome.txt</p>
 
-  <body>
-    <div align="center">
-      <img src="https://sysarmy.com/images/logo.png" width="141" height="141" border="0" alt="mirrors.eze.sysarmy.com" />
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWNNNNNWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWNNNNNNNNWWMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMO:''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''cKMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMX:                                                                                                                                                                                                                                       cNMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWx.                                                                                                                                                                                                                                      .OMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMX;                                                                                                                                                                                                                                       lNMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWd.                                                                                                                                                                                                                                      '0MMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMK,                                                                                                                                                                                                                                       oWMMMM</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWo                                                                                                                                                                                                                                       ,KMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM0'                                                                                                                                                                                                                                      .dWMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNl                                                                                                                                                                                                                                       ;KMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMO.                 :O000000000000000000000000000000000000000000000000O0x.                .lOOO00000000OOOOl.                   .cOOOOO0000000OOl.                'x0O000000000000000000000000000000000000000000000000k;                 .xWMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNc                 .OMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWx.                :XMMMMMMMMMMMMMMX:                    ;KMMMMMMMMMMMMMNc                .dWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM0'                 :XMMMMMMM</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMk.                 lWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMK,                .kMMMMMMMMMMMMMMWx.                   .xWMMMMMMMMMMMMMk.                ;KMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNl                 .kMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMX:                 '0MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWd.                cNMMMMMMMMMMMMMMX;                    :XMMMMMMMMMMMMMX:                .xWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMO.                 cNMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWx.                 oWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM0,                .OMMMMMMMMMMMMMMWd.                   .kMMMMMMMMMMMMMWx.                :XMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNc                 .OMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMK;                 ,KMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNo                 lNMMMMMMMMMMMMMMX;                    cNMMMMMMMMMMMMMK;                .kMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMk.                 lNMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWd.                .dWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMO'                '0MMMMMMMMMMMMMMMNkoooooooooooooooooooxXMMMMMMMMMMMMMWd.                cNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMX:                 '0MMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM0,                 ;XMMMMMMMMMMMMMWNK0000000000000000000000000000000000O:                 oWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM0,                .OMMMMMMMMMMMMMMNK00000000000000000000000000000000000o.                 oWMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWo                 .xWMMMMMMMMMMMMM0;....................................                 ,KMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWo                 lNMMMMMMMMMMMMMNl....................................                  ,KMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMO'                 cXMMMMMMMMMMMMMMNkddddddddddddddddddddddddddddddddddl.                .dWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMO'                '0MMMMMMMMMMMMMMW0ddddddddddddddddddddddddddddddddddo,                 .dWMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNl                 .kMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWx.                ;XMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNl                 oWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMK,                 ;XMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMO.                 lNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMX;                .xMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMO.                ,KMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWo                 .xMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNc                 'OMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWd.                :XMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMXc                .dWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM0'                 :XMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMk.                 oWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMK,                .kMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMx.                ;KMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNl                 .kMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMX;                 ,0MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWo                 cNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMX;                .xWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMO.                 lNMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWx.                .dWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM0'                'OMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWd.                :XMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNc                 'OMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMK,                 ,0WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWMMMMMMMMMMMMMMMNl                 cXWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWMMMMMMMMMMMMMMMK,                .xNWNWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWNWMMMMMMMMMMMMMMMMk.                 oWMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWd.                 .''''''''''''''''''''''''''''''''',,lKMMMMMMMMMMMMMMO.                 .''''''''''''''''''''''''''''''''''',dNMMMMMMMMMMMMMWo.                 .,,'''''''''''''''''''''''''''',''':OWMMMMMMMMMMMMMX:                 ,0MMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM0'                 .:::::::::::::::::::::::::::::::::::cxXMMMMMMMMMMMMMNc                 ,::::::::::::::::::::::::::::::::::::cOWMMMMMMMMMMMMM0'                .;c:::::::::::::::::::::::::::::::::coKMMMMMMMMMMMMMWx.                .dWMMMMMMMMMMMMMMMM</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNl                 .kWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMk.                ;KMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNl                 lNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMK;                 ;KMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMO'                 cNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMX:                .xWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMO.                '0MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWd.                .xWMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNc                 .OMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWx.                :XMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNc                 oWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM0,                 :XMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMk.                 lNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMK;                .kMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMk.                ,KMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWo                 .kMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMX:                 '0MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWd.                cNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMX:                .dWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMO'                 cNMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWx.                 oWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM0,                .OMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWx.                ;XMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNc                 .OMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMK;                 ,KMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWo                 lNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMK;                .xMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMk.                 lNMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWd.                 .cllllllllllllllllllllllllllllllllllllllllllllllllll:.                 ,llllllllllllllllllllllllllllllllllllllllllllllllllll;                 .:llllllllllllllllllllllllllllllllllllllllllllllllllc'                 '0MMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMK,                                                                                                                                                                                                                                       oWMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWo                                                                                                                                                                                                                                       ,0MMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM0'                                                                                                                                                                                                                                      .dWMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNl                                                                                                                                                                                                                                       ;KMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMO.                                                                                                                                                                                                                                      .xWMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNc                                                                                                                                                                                                                                       :XMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMk.                                                                                                                                                                                                                                      .kMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMX:                                                                                                                                                                                                                                       cNMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWx.                 ;ooooooooooooooooooooooooooooooooooooooooooooooooooo;.                .coooooooooooooooooooooooooooooooooooooooooooooooooool'                 'looooooooooooooooooooooooooooooooooooooooooooooooooc.                 .OMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMK;                 ,KMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWo                 lNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMK;                .kMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMk.                 lNMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWd.                .dWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMO'                '0MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWd.                cNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMX:                 '0MMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM0,                 ;XMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNc                 oWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM0,                .OMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWx.                 oWMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWo                 .xMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMk.                ,KMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWo                 lNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMK;                 ,KMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMO'                 :XMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMX:                .dWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM0'                '0MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWd.                .dWMMMMMMMMMMMMMMMMMMMMMMMMMMMM</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNl                 .kMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMx.                ;XMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNl                 oWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMK,                 ;XMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMO.                 cNMMMMMMMMMMMMMMWWWWWWWWWWWWWWWWWWWWWMMMMMMMMMMMMMMMX;                .xWMMMMMMMMMMMMMMWWWWWWWWWWWWWWWWWWWWWMMMMMMMMMMMMMMMMO.                ,KMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWo                 .xWMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNc                 'OMMMMMMMMMMMMMWO:,,,,,,,,,,,,,,,,,,,dNMMMMMMMMMMMMMWd.                :XMMMMMMMMMMMMMNd;,,,,,,,,,,,,,,,,,,,:kWMMMMMMMMMMMMMXc                .dWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM0'                 :XMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWk.                 oWMMMMMMMMMMMMMWOc::::::::::::::::::ckWMMMMMMMMMMMMMK,                .kMMMMMMMMMMMMMWx. .;:::::::::::::::::l0WMMMMMMMMMMMMMk.                ;KMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNl                 .kMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMX:                 ,0MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWo                 cNMMMMMMMMMMMMMK; .kWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMX;                .xWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMO.                 cNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWx.                .dWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM0'                .OMMMMMMMMMMMMMWd. cNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWx.                :XMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNc                 'OMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMK,                 ;KMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNl                 lWMMMMMMMMMMMMMK, .OMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMK;                .kMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMk.                 oWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWo.                .xWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMO.                ,0MMMMMMMMMMMMMWo  lNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWo.                cNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMX:                 ,0MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM0'                 :XMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNc                .oWMMMMMMMMMMMMM0' '0MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM0'                .OMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWx.                .dWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWl                 .kMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMk.                ;KMMMMMMMMMMMMMNl .oWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNo                 lNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMK;                 ,KMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMO'                 cNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMX:                .xWMMMMMMMMMMMMMO. ,KMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMO'                '0MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWd.                .xWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNc                 .OMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWx.                :XMMMMMMMMMMMMMNc .dWMMMMMMMMMMMMMMKdlllllllllllllllll'                 oWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM0,                 :XMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMk.                 lNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMK;                .kMMMMMMMMMMMMMMk. :XMMMMMMMMMMMMMMWk,................                  ,KMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNo                 .kMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMX:                 '0MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWd.                :XMMMMMMMMMMMMMX: .kMMMMMMMMMMMMMMMMWNXXXXXXXXXXXXXXX0;                .dWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMO'                 cNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMx.                 oWMMMMMMMMMMMMMXdcccccccccccccccccccoKMMMMMMMMMMMMMMK,                .OMMMMMMMMMMMMMWx. cNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWx.                ;XMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNl                 .OMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMX;                 ,KMMMMMMMMMMMMMWo                    '0MMMMMMMMMMMMMWo                 lNMMMMMMMMMMMMMK; .OMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMX;                .xMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMk.                 lNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMWd.                .dWMMMMMMMMMMMMMO'                    oWMMMMMMMMMMMMM0'                '0MMMMMMMMMMMMMWd. lNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWd.                :XMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMX:                 '0MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMK,                 ;KMMMMMMMMMMMMMNc                    ,0MMMMMMMMMMMMMNl                 oWMMMMMMMMMMMMM0, 'OMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMK,                .kMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMx.                 oWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMWo                 .xWMMMMMMMMMMMMMO.                   .dWMMMMMMMMMMMMMO.                ,0MMMMMMMMMMMMMWo  oWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWo                 lNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMX;                 ,0MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMM0'                 :XMMMMMMMMMMMMMX:                    ;KMMMMMMMMMMMMMNc                .dWMMMMMMMMMMMMM0' ,0MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM0'                'OMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWd.                .dWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMNl                  :kkkkkkkkkkkkkkl.                    :xkkkkkkkkkkkkkl.                .okkkkkkkkkkkkkx;  ;xkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkx:                 ,xkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkd'                 ;KMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMO.                                                                                                                                                                                                                                      .xWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMNc                                                                                                                                                                                                                                       :XMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMk.                                                                                                                                                                                                                                      .kMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMX:                                                                                                                                                                                                                                       cNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMWx.                                                                                                                                                                                                                                      .OMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMK;                                                                                                                                                                                                                                       lNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMWd.                                                                                                                                                                                                                                      '0MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMM0,                                                                                                                                                                                                                                       oWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMWo                  ',,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,.                 .,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,'.                 .,,,,,,,,,,,,,,.                     .,,,,,,,,,,,,,,.                  ,KMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMM0'                 :XWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWX:                .dNWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWO'                'OWWWWWWWWWWWWWNo.                   .kWWWWWWWWWWWWWNo.                .dWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMNl                 .kMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMx.                ;XMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNl                 oWMMMMMMMMMMMMM0,                    lNMMMMMMMMMMMMMK,                 ;XMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMO.                 cNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMX;                .xWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMO.                ,0MMMMMMMMMMMMMWo                    '0MMMMMMMMMMMMMWo                 .xWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMXc                 'OMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWd.                :XMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNc                .dWMMMMMMMMMMMMMO'                    oWMMMMMMMMMMMMM0'                 :XMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMk.                 oNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMK,                .kMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMk.                ;KMMMMMMMMMMMMMNl                    ,0MMMMMMMMMMMMMNl                 .kMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMX:                 ,0MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWo                 cNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMX:                .xWMMMMMMMMMMMMMK:...................'xWMMMMMMMMMMMMMO.                 cNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMWx.                .dWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM0'                .OMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWx.                :XMMMMMMMMMMMMMMWXKKKKKKKKKKKKKKKKKKKXWMMMMMMMMMMMMMNc                 'OMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMK;                 ;KMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNl                 lNMMMMMMMMMMMMMNko0WMMMMMMMMMMMMMWKdxXMMMMMMMMMMMMMMMK;                .kMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMk.                 lNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMWd.                .xWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMO.                '0MMMMMMMMMMMMMWd. oWMMMMMMMMMMMMMK; '0MMMMMMMMMMMMMMWd.                cNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMX:                 '0MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMM0,                 :XMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNc                 oWMMMMMMMMMMMMM0' '0MMMMMMMMMMMMMWo  lNMMMMMMMMMMMMMM0,                .OMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWx.                .dWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMWo                 .kWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMk.                ,KMMMMMMMMMMMMMNl .oWMMMMMMMMMMMMM0' '0MMMMMMMMMMMMMMNl                 lNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMK;                 ;KMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMO'                 cNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMX:                .dWMMMMMMMMMMMMMO. ,KMMMMMMMMMMMMMNl .oWMMMMMMMMMMMMMMO'                '0MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWd.                .dWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMNc                 .OMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWx.                ;XMMMMMMMMMMMMMNc .dWMMMMMMMMMMMMMO. ,KMMMMMMMMMMMMMMNc                 oWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM0,                 :XMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMk.                 lNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMK;                .kWMMMMMMMMMMMMMk. ;XMMMMMMMMMMMMMNc .dWMMMMMMMMMMMMMMk.                ,KMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWo                 .kMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMX:                 '0MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWd.                cXMMMMMMMMMMMMMX: .xWMMMMMMMMMMMMMk. ;XMMMMMMMMMMMMMMX:                .dWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMO'                 cXMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMx.                 oWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMK,                .OMMMMMMMMMMMMMWx. :XMMMMMMMMMMMMMX: .xWMMMMMMMMMMMMMWx.                ;XMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNl                 .OMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMX;                 ,KMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWo                 lNMMMMMMMMMMMMMK; .kMMMMMMMMMMMMMWx. :XMMMMMMMMMMMMMMX;                 :kOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOXWMMMMMMMMMMMMMMO.                 lNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMWd.                .dWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM0'                'OMMMMMMMMMMMMMWd. lNMMMMMMMMMMMMMK; .kMMMMMMMMMMMMMMWd.                  ...................................oNMMMMMMMMMMMMMXc                 '0MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMK,                 ;KMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNl                 oWMMMMMMMMMMMMMK, 'OMMMMMMMMMMMMMWd. lNMMMMMMMMMMMMMMK,                .okkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkONMMMMMMMMMMMMMMk.                 oWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMWo                 .xWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMO.                ,0MMMMMMMMMMMMMWo  ,xkkkkkkkkkkkkkd' 'OMMMMMMMMMMMMMMWo                 cNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMX;                 ,0MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMM0'                 :XMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNc                .dWMMMMMMMMMMMMM0'                    oWMMMMMMMMMMMMMM0'                'OMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWd.                .dWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMNl                 .kMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMk.                ;KMMMMMMMMMMMMMNl                    ,0MMMMMMMMMMMMMMNl                 lNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMK,                 ;KMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMO.                 cNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMX:                .xWMMMMMMMMMMMMMO.                   .dWMMMMMMMMMMMMMMO.                ,0MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWo.                .xWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMNc                 .OMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWx.                :XMMMMMMMMMMMMMNc                    ;KMMMMMMMMMMMMMNKc                .dWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM0'                 :XMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM</pre>
+            <pre class="logo-sysarmy">MMMMMMMk.                 lNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMK;                .kMMMMMMMMMMMMMMk.                   .xWMMMMMMMMMMMMMk:.                ,KMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNl                 .kMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMX:                 .kXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXo.                ;0XXXXXXXXXXXXX0;                    ,OXXXXXXXXXXXXX0;                  oXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXk.                 cNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMWx.                  ....................................................                  ................                      ...............                   .....................................................                 .OMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMK;                                                                                                                                                                                                                                       lNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMWd.                                                                                                                                                                                                                                      '0MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMK,                                                                                                                                                                                                                                       oWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMWo                                                                                                                                                                                                                                       ,KMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMM0'                                                                                                                                                                                                                                      .dWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMNl                                                                                                                                                                                                                                       ;XMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMO.                                                                                                                                                                                                                                      .xWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MNo.......................................................................................................................................................................................................................................cXMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MWXKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+            <pre class="logo-sysarmy">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW</pre>
+        </div>
+        <div class="archive-specs">
+            <img src="./img/Arrow.png" alt="green arrow">
+            <p class="directory">disneyland</p>
+            <p class="git">git:(</p>
+            <span class="branch">issue25</span>
+            <p class="git">)</p>
+            <p class="command">cat ./mirror/archive_specs.txt</p>
+        </div>
+        <div class="distros">
+            <img src="./img/Arrow.png" alt="green arrow">
+            <p class="directory">disneyland</p>
+            <p class="git">git:(</p>
+            <span class="branch">issue25</span>
+            <p class="git">)</p>
+            <p class="command">cat ./mirror/archive_distros.txt</p>
+        </div>
+    </section>
+</main>
+<footer>
 
-      <p>
-        Welcome to mirrors.sysarmy.com, a service of the
-        <a href="https://sysarmy.com/">Sysarmy Community</a>.
-        This site contains our archives of mirrors of other sites.
-      </p>
-
-      <div align="center">
-        <a name="access" id="access"></a>
-
-        <table cellpadding="10">
-          <tr>
-            <th>Protocol</th>
-            <th>Location</th>
-          </tr>
-
-          <tr>
-            <td>HTTP</td>
-            <td><a href="http://mirrors.eze.sysarmy.com">http://mirrors.eze.sysarmy.com/</a></td>
-          </tr>
-        </table>
-
-        <p><a name="directory" id="directory"></a></p>
-
-        <table cellpadding="10">
-          <tr>
-            <th width="85%">Description</th>
-            <th width="15%">Location</th>
-          </tr>
-          <tr>
-            <td><a href="http://www.archlinux.org/">Arch Linux</a>, a simple, lightweight Linux distribution.</td>
-            <td><a href="archlinux/"><tt>archlinux</tt></a></td>
-          </tr>
-          <tr>
-            <td><a href="http://www.centos.org/">CentOS</a>, an Enterprise-class Linux
-                Distribution "derived from sources freely provided to the public by
-                <a href="http://www.redhat.com/">Red Hat</a>"</td>
-            <td><a href="centos/"><tt>centos</tt></a></td>
-          </tr>
-          <tr>
-            <td><a href="http://www.ubuntu.com/">Ubuntu</a>,
-              a Linux distribution from <a href="http://www.canonical.com/">Canonical</a></td>
-            <td><a href="ubuntu/"><tt>ubuntu</tt></a><br/>
-                <a href="ubuntu-releases/"><tt>ubuntu-releases</tt></a></td>
-          </tr>
-          <tr>
-            <td><a href="https://linuxmint.com/">LinuxMint</a>,
-              The purpose of Linux Mint is to produce a modern, elegant and comfortable operating system which is both powerful and easy to use.</a></td>
-            <td><a href="linuxmint/"><tt>linuxmint</tt></a><br/>
-          </tr>
-        </table>
-        <p style="font-size: small">
-          Please note all contents are provided by the origin sites and are
-          mirrored here by automation. Sysarmy & Sponsors are providing
-          this as a service to the general public and to the origin sites but is
-          not responsible for any content.
-        </p>
-
-      </div>
-
-      <hr />
-
-      <p style="text-align: center; font-size: small">
-        This site is operated by Sysarmy with support from the following sponsors.
-      </p>
-
-      <hr />
-
-      <a name="sponsors"></a> <a name="donors"></a>
-
-      <div align="center">
-        <p id="donors">
-          <a href="https://www.cabase.org.ar/"><img src="https://sysarmy.com/images/sponsors/cabase-170.png"
-             alt="CABASE" /></a>
-          &nbsp;
-          <a href="https://www.syt.com/"><img src="https://sysarmy.com/images/sponsors/syt-170.png"
-            alt="SYT"  /></a>
-          &nbsp;
-          <a href="http://openqube.io/"><img src="https://sysarmy.com/images/sponsors/openqube-black.png"
-             alt="Openqube" /></a>
-          &nbsp;
-          <a href="https://www.datadoghq.com/"><img src="https://sysarmy.com/images/sponsors/datadog.png"
-             alt="Datadog" /></a>
-        </p>
-      </div>
-    </div>
-  </body>
+</footer>
+</body>
 </html>
-
-<!--
-vim: et ts=2 sw=2
--->
